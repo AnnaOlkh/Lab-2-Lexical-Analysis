@@ -1,0 +1,47 @@
+procedure dijkstra(s: LongInt);
+var cur, cd, e, u, nd: LongInt;
+begin
+  heapInit(n, s);
+  while heapExtractMin(cur, cd) do
+  begin
+    if cd > dist[cur] then Continue; // захист від застарілих значень
+    e := head[cur];
+    while e <> 0 do
+    begin
+      u := toV[e];
+      nd := cd + wgt[e];
+      if nd < dist[u] then
+      begin
+        dist[u] := nd;
+        parent[u] := cur;
+        heapDecreaseKey(u, nd);
+      end;
+      e := nxt[e];
+    end;
+  end;
+end;
+
+procedure printPath(t: LongInt);
+var path: array[1..MAXN] of LongInt;
+    k, v: LongInt;
+begin
+  if dist[t] = INF then
+  begin
+    WriteLn('No path to ', t);
+    Exit;
+  end;
+  k := 0; v := t;
+  while v <> -1 do
+  begin
+    Inc(k); path[k] := v;
+    v := parent[v];
+  end;
+
+  while k > 0 do
+  begin
+    Write(path[k]);
+    if k > 1 then Write(' -> ');
+    Dec(k);
+  end;
+  WriteLn;
+end;
