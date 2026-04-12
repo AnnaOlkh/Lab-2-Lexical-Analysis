@@ -1,18 +1,17 @@
-//keyword vs identifier
 beginx begin end
 
-//Keyword in and range operator ..
 pin in p in q; 
 if a in [1..3] then ;
 
-//Numbers: integers, reals, exponentials, hexadecimals, unary minus
 42 3.14 6.02e23 $FF 1e-3 -7
 
-//Preprocessor directives vs comments
-{$R+} (*$APPTYPE CONSOLE*) {not directive} (* block *)
+{$R+}
+(*$APPTYPE CONSOLE*)
+{not directive}
+(* block
+   block
+   block*)
 
-//Strings with doubled quotes and # character codes
 'It''s ok' #13#10 'A'#32'B'
 
-//Error token
-x § y
+x ' y

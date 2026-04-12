@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35506.116 d17.12
+VisualStudioVersion = 17.12.35506.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab 2 Lexical Analysis", "Lab 2 Lexical Analysis\Lab 2 Lexical Analysis.vcxproj", "{B931CF76-1EB2-454A-8A9D-6F9C24700F82}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PascalLexerTest", "PascalLexerTest\PascalLexerTest.vcxproj", "{C1873CEC-7D3E-4B6F-AF76-73E8B139C002}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,14 @@ Global
 		{B931CF76-1EB2-454A-8A9D-6F9C24700F82}.Release|x64.Build.0 = Release|x64
 		{B931CF76-1EB2-454A-8A9D-6F9C24700F82}.Release|x86.ActiveCfg = Release|Win32
 		{B931CF76-1EB2-454A-8A9D-6F9C24700F82}.Release|x86.Build.0 = Release|Win32
+		{C1873CEC-7D3E-4B6F-AF76-73E8B139C002}.Debug|x64.ActiveCfg = Debug|x64
+		{C1873CEC-7D3E-4B6F-AF76-73E8B139C002}.Debug|x64.Build.0 = Debug|x64
+		{C1873CEC-7D3E-4B6F-AF76-73E8B139C002}.Debug|x86.ActiveCfg = Debug|Win32
+		{C1873CEC-7D3E-4B6F-AF76-73E8B139C002}.Debug|x86.Build.0 = Debug|Win32
+		{C1873CEC-7D3E-4B6F-AF76-73E8B139C002}.Release|x64.ActiveCfg = Release|x64
+		{C1873CEC-7D3E-4B6F-AF76-73E8B139C002}.Release|x64.Build.0 = Release|x64
+		{C1873CEC-7D3E-4B6F-AF76-73E8B139C002}.Release|x86.ActiveCfg = Release|Win32
+		{C1873CEC-7D3E-4B6F-AF76-73E8B139C002}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

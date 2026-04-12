@@ -1,4 +1,4 @@
-#include <regex>
+/*#include <regex>
 #include <string>
 #include <iostream>
 #include <iterator>
@@ -32,7 +32,7 @@ int main() {
 	   {"PUNCTUATION",  regex(R"(;|,|:|\.|\(|\)|\[|\])")},
 	   {"WS",      regex("[ \t\r\n]+")}
 	};
-	string::const_iterator it = code.begin();
+	string :: const_iterator it = code.begin();
 	while (it != code.end()) {
 		bool matched = false;
 
@@ -56,3 +56,4 @@ int main() {
 	}
 	return 0;
 }
+*/

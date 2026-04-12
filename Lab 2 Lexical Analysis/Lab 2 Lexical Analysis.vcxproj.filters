@@ -18,9 +18,30 @@
     <ClCompile Include="my_lexer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FileReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PascalLexer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="programPascal.txt" />
     <Text Include="test.txt" />
+    <Text Include="algorithm.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Token.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileReader.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PascalLexer.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

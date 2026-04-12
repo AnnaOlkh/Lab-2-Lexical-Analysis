@@ -24,6 +24,7 @@
     <ProjectGuid>{b931cf76-1eb2-454a-8a9d-6f9c24700f82}</ProjectGuid>
     <RootNamespace>Lab2LexicalAnalysis</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Lab2LexicalAnalysis</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -127,11 +128,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FileReader.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="my_lexer.cpp" />
+    <ClCompile Include="PascalLexer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="algorithm.txt" />
     <Text Include="programPascal.txt" />
     <Text Include="test.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FileReader.h" />
+    <ClInclude Include="PascalLexer.h" />
+    <ClInclude Include="Token.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,0 +1,17 @@
+program DijkstraDemo;
+const N=5; INF=1000000;
+var g: array[1..N,1..N] of integer; dist: array[1..N] of integer; used: array[1..N] of boolean; i,j,v,u,src: integer;
+begin
+  for i:=1 to N do for j:=1 to N do g[i,j]:=INF;
+  g[1,2]:=10; g[1,3]:=3; g[3,2]:=1; g[2,4]:=2; g[3,4]:=8; g[4,5]:=7; g[2,5]:=15;
+  for i:=1 to N do begin dist[i]:=INF; used[i]:=False; end;
+  src:=1; dist[src]:=0;
+  for i:=1 to N do begin
+    v:=0;
+    for j:=1 to N do if (not used[j]) and ((v=0) or (dist[j]<dist[v])) then v:=j;
+    if (v=0) or (dist[v]=INF) then break;
+    used[v]:=True;
+    for u:=1 to N do if (g[v,u]<INF) and (dist[v]+g[v,u]<dist[u]) then dist[u]:=dist[v]+g[v,u];
+  end;
+  for i:=1 to N do writeln('dist[',i,'] = ',dist[i]);
+end.
