@@ -2,11 +2,13 @@
 
 #include <string>
 
+#include "ISourceReader.h"
+
 namespace pascal_lexer {
 
-    class FileReader {
+    class FileReader final : public ISourceReader {
     public:
-        static std::string readAllText(const std::string& path);
+        std::string readAllText(const std::string& path) const override;
     };
 
-}  // namespace pascal_lexer
+}

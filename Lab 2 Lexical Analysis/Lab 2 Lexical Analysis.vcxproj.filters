@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="my_lexer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="FileReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="PascalLexer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PascalLexer.cpp">
+    <ClCompile Include="LexerApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,6 +41,12 @@
       <Filter>Resource Files</Filter>
     </ClInclude>
     <ClInclude Include="PascalLexer.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ISourceReader.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LexerApplication.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
   </ItemGroup>

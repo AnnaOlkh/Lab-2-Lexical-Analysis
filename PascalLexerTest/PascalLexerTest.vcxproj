@@ -32,6 +32,10 @@
   <ImportGroup Label="Shared" />
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\PascalLexerTest\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\PascalLexerTest\</IntDir>
+  </PropertyGroup>
   <ItemDefinitionGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -59,6 +63,7 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>D:\Ann\ttp-32\System programming\Lab 2 Lexical Analysis\Lab 2 Lexical Analysis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -109,13 +114,18 @@
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\Users\User\Downloads\pascal_lexer_refactor\pascal_lexer_refactor\test_config.h" />
     <ClInclude Include="..\Lab 2 Lexical Analysis\FileReader.h" />
+    <ClInclude Include="..\Lab 2 Lexical Analysis\ISourceReader.h" />
+    <ClInclude Include="..\Lab 2 Lexical Analysis\LexerApplication.h" />
     <ClInclude Include="..\Lab 2 Lexical Analysis\PascalLexer.h" />
     <ClInclude Include="..\Lab 2 Lexical Analysis\Token.h" />
+    <ClInclude Include="MockSourceReader.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Users\User\Downloads\pascal_lexer_refactor\pascal_lexer_refactor\LexerTests.cpp" />
     <ClCompile Include="..\Lab 2 Lexical Analysis\FileReader.cpp" />
+    <ClCompile Include="..\Lab 2 Lexical Analysis\LexerApplication.cpp" />
     <ClCompile Include="..\Lab 2 Lexical Analysis\PascalLexer.cpp" />
+    <ClCompile Include="LexerApplicationMockTests.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -9,9 +9,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Lab 2 Lexical Analysis\FileReader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\Lab 2 Lexical Analysis\PascalLexer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -20,6 +17,15 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)src\gtest\gtest-all.cc" />
     <ClCompile Include="$(MSBuildThisFileDirectory)src\gmock\gmock-all.cc" />
+    <ClCompile Include="LexerApplicationMockTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lab 2 Lexical Analysis\LexerApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lab 2 Lexical Analysis\FileReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\Users\User\Downloads\pascal_lexer_refactor\pascal_lexer_refactor\test_config.h">
@@ -28,10 +34,19 @@
     <ClInclude Include="..\Lab 2 Lexical Analysis\PascalLexer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\Lab 2 Lexical Analysis\FileReader.h">
+    <ClInclude Include="..\Lab 2 Lexical Analysis\Token.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\Lab 2 Lexical Analysis\Token.h">
+    <ClInclude Include="MockSourceReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lab 2 Lexical Analysis\ISourceReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lab 2 Lexical Analysis\LexerApplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lab 2 Lexical Analysis\FileReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
